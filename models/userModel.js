@@ -13,7 +13,6 @@ const User = new mongoose.model('User', new mongoose.Schema({
         required: true,
         minlength: 5,
         maxlength: 50,
-        unique: true
     },
     password: {
         type:String,
