@@ -1,13 +1,10 @@
 const user = require('./routes/user')
 const auth = require('./routes/auth')
 const config = require('config')
-const Joi = require('joi');
 const mongoose = require('mongoose')
 const express = require('express');
-const router = express.Router();
 const cors = require("cors")
 const app = express()
-const cookieParser = require('cookie-parser')
 const bodyParser =require('body-parser')
 
 if(!config.get('jwtPrivateKey')) {
